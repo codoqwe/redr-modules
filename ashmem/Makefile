@@ -2,7 +2,7 @@ ccflags-y += -I$(src)
 obj-m := ashmem_linux.o
 ashmem_linux-y := ashmem.o deps.o
 
-KDIR ?= /lib/modules/`uname -r`/build
+KDIR ?= /lib/modules/4.15.18-4-pve/build
 
 all:
 	$(MAKE) -C $(KDIR) M=$$PWD
